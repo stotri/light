@@ -1,0 +1,49 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    min-width: 1438px;
+    
+}
+
+.container {
+    width: 1181px;
+    height: auto;
+    margin: 0px auto;
+    border: 1px solid red;
+}
+
+.one {
+    min-width: 1438px;
+    height: 901.84px;
+    background: url(/images/img/fon.jpg) 0 0/cover no-repeat;
+    margin: 0px auto;
+    &__header {
+        width: auto;
+        height: 107.25px;
+        display: flex;
+        align-items: center;
+    }
+    &__header-menu {    
+        width: 100%;
+        ul {
+            width: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: #FFFFFF;
+        }
+    }
+}

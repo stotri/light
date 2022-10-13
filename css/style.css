@@ -1,0 +1,62 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  min-width: 1438px;
+}
+
+.container {
+  width: 1181px;
+  height: auto;
+  margin: 0px auto;
+  border: 1px solid red;
+}
+
+.one {
+  min-width: 1438px;
+  height: 901.84px;
+  background: url(/images/img/fon.jpg) 0 0/cover no-repeat;
+  margin: 0px auto;
+}
+
+.one__header {
+  width: auto;
+  height: 107.25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.one__header-menu {
+  width: 100%;
+}
+
+.one__header-menu ul {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
