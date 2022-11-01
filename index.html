@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
@@ -14,16 +14,19 @@
         <section class="container">
             <nav class="header__menu">
                 <ul>
-                    <li>Главная</li>
-                    <li>Преимущества</li>
-                    <li>Услуги и цены</li>
-                    <li>Этапы работы</li>
-                    <li>Примеры работ</li>
-                    <li>Отзывы</li>
-                    <li>Обо мне</li>
-                    <li>Контакты</li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#why-me">Преимущества</a></li>
+                    <li><a href="#services-and-prices">Услуги и цены</a></li>
+                    <li><a href="#order-works">Этапы работы</a></li>
+                    <li><a href="#examples">Примеры работ</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
+            <section class="header__menu-burger">
+                <span></span>
+            </section>
         </section>
     </header>
     <section class="one">
@@ -65,7 +68,7 @@
                     </article>
                     <div class="one__futer-border"></div>
                     <article class="one__futer-column center">
-                        <span> &#62;2500</span>лет опыта
+                        <span> &#62;2500</span> проектов
                     </article>
                     <div class="one__futer-border"></div>
                     <article class="one__futer-column">
@@ -75,7 +78,7 @@
             </section>
         </section>
     </section>
-    <section class="why-me">
+    <section class="why-me" id="why-me">
         <section class="container">
             <div class="why-me__linea"></div>
             <article class="why-me__box-why-me">
@@ -109,8 +112,6 @@
                     <p>Оплата проекта после всех согласований в гос.органах.</p>
                     <p><span>Наличный и безналичный расчет</span></p>
                 </article>
-            </section>
-            <section class="why-me__benefits">
                 <article class="why-me__benefits-column">
                     <div class="why-me__benefits-column-icon">
                         <img src="/images/icons/tools.png" alt="tools">
@@ -136,7 +137,7 @@
             </section>
         </section>
     </section>
-    <section class="services-and-prices">
+    <section class="services-and-prices" id="services-and-prices">
         <section class="container">
             <div class="services-and-prices__linea"></div>
             <div class="services-and-prices__bulb">
@@ -149,7 +150,8 @@
             <section class="services-and-prices__box">
                 <section class="services-and-prices__box-column">
                     <article class="services-and-prices__box-column-block title">
-                        <h2>Услуга <br>проект элетроснабжения:</h2>
+                        <h3>Услуга</h3>
+                        <p>проект элетроснабжения:</p>
                     </article>
                     <article class="services-and-prices__box-column-block">частный жилой дом</article>
                     <article class="services-and-prices__box-column-block">стройплощадка дома,1-й этап </article>
@@ -160,7 +162,7 @@
                 </section>
                 <section class="services-and-prices__box-column">
                     <article class="services-and-prices__box-column-block title">
-                        <h2>Цена</h2>
+                        <h3>Цена</h3>
                     </article>
                     <article class="services-and-prices__box-column-block right">120-170 BYN</article>
                     <article class="services-and-prices__box-column-block right">120-170 BYN</article>
@@ -173,13 +175,13 @@
             <section class="services-and-prices__box">
                 <section class="services-and-prices__box-column">
                     <article class="services-and-prices__box-column-block title">
-                        <h2>Услуга </h2>
+                        <h3>Услуга </h3>
                     </article>
                     <article class="services-and-prices__box-column-block">монтаж электрики дома</article>
                 </section>
                 <section class="services-and-prices__box-column">
                     <article class="services-and-prices__box-column-block title">
-                        <h2>Цена</h2>
+                        <h3>Цена</h3>
                     </article>
                     <article class="services-and-prices__box-column-block right">400-500 BYN</article>
                 </section>
@@ -282,11 +284,14 @@
             </article>
         </section>
     </section>
-    <section class="order-works">
+    <section class="order-works" id="order-works">
+        <div class="order-works__bulb">
+            <img src="/images/icons/bulb-right.png" alt="bulb">
+        </div>
         <section class="container">
             <article class="order-works__title-box">
                 <div class="order-works__linea"></div>
-                <h3>Заказ <span>монтажных</span> работ <span>под ключ</spa>
+                <h3>Заказ <span>монтажных</span> работ <span>под ключ</span>
                 </h3>
             </article>
             <section class="order-works__block-step">
@@ -308,8 +313,6 @@
                     </div>
                     <p>выполняем закупку оборудования, делаем монтаж объекта</p>
                 </article>
-            </section>
-            <section class="order-works__block-step">
                 <article class="order-works__step">
                     <div class="order-works__step-number">4
                         <div class="order-works__step-null"></div>
@@ -328,8 +331,6 @@
                     </div>
                     <p>берем акт раздела границ и вывозим всех инспекторов на объект</p>
                 </article>
-            </section>
-            <section class="order-works__block-step">
                 <article class="order-works__step">
                     <div class="order-works__step-number">7
                         <div class="order-box__step-null"></div>
@@ -357,7 +358,7 @@
             </article>
         </section>
     </section>
-    <section class="examples">
+    <section class="examples" id="examples">
         <section class="container">
             <div class="examples__linea"></div>
             <article class="examples__box-order">
@@ -379,21 +380,13 @@
             </section>
         </section>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <section class="container">
             <div class="reviews__linea"></div>
             <article class="reviews__box-order">
                 <h2>Отзывы</h2>
                 <h3>Отзывы</h3>
             </article>
-            <section class="reviews__buttons">
-                <button>
-                    <img src="/images/icons/Arrow 1.png" alt="Arrow">
-                </button>
-                <button>
-                    <img src="/images/icons/Arrow 2.png" alt="Arrow">
-                </button>
-            </section>
             <section class="reviews__box-reviews">
                 <article class="reviews__column">
                     <div class="reviews__column-text">
@@ -457,7 +450,7 @@
             </section>
         </section>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <section class="container">
             <div class="about__linea"></div>
             <article class="about__box-order">
@@ -479,24 +472,7 @@
                     </ul>
                 </article>
                 <article class="about__block-info-column right">
-                    <div class="about__block-info-circle">
-                        <div class="about__block-info-circle-dot1"></div>
-                        <div class="about__block-info-circle-dot2"></div>
-                        <div class="about__block-info-circle-dot3"></div>
-                    </div>
-                    <div class="about__block-info-circle2">
-                    </div>
-                    <div class="about__block-info-circle2-up">
-                        <div class="about__block-info-circle2-dot1"></div>
-                        <div class="about__block-info-circle2-dot2"></div>
-                        <div class="about__block-info-circle2-dot3"></div>
-                    </div>
-                    <div class="about__block-info-image">
-                        <img src="/images/img/photo.png" alt="photo">
-                    </div>
-                    <div class="about__block-info-name">
-                        Денис Пышный
-                    </div>
+                    <img src="/images/img/about.png" alt="photo">
                 </article>
             </section>
             <p class="about__p">поэтому я в курсе всех изменений и актуальных требований к проекту и монтажу по этим
@@ -504,7 +480,7 @@
                 т.к. все они отличаються между собой.</p>
         </section>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <section class="container">
             <div class="contacts__linea"></div>
             <article class="contacts__box-order">
@@ -521,16 +497,20 @@
                     <article class="contacts__block-left-box">
                         <h4>оставьте заявку</h4>
                         <p>на бесплатную консультацию</p>
-                        <form action="URL" method="get">
+                        <form action="URL" name="username" method="get">
                             <p>Ваше имя</p>
                             <input type="text" name="username" placeholder="Александр" value="">
                             <p>Ваш телефон</p>
-                            <input type="tel" name="" placeholder="+375 (29) ___ __ __" id="">
-                            <div class="contacts__block-left-button"><button type="submit">получить консультацию</button></div>
+                            <input type="text" name="username" placeholder="+375 (29) ___ __ __" id="">
+                            <div class="contacts__block-left-button"><button type="submit">получить
+                                    консультацию</button></div>
                         </form>
+                        <div class="contacts__block-image">
+                            <img src="/images/icons/circle.png" alt="circle">
+                        </div>
                     </article>
+                    <div class="contacts__block-left-blur"></div>
                 </section>
-                <div class="contacts__block-left-blur"></div>
                 <section class="contacts__block-right">
                     <p>ИП Пышный Денис Игоревич
                         УНП790836120</p>
@@ -539,16 +519,15 @@
                         </div>
                         <p>+375 (29) 250-82-09</p>
                     </div>
-                    <div class="contacts__block-right-email"><p>E-mail: pyshnyj@tut.by</p></div>
+                    <div class="contacts__block-right-email">
+                        <p>E-mail: pyshnyj@tut.by</p>
+                    </div>
                     <div class="contacts__block-right-gps">
                         <div class="contacts__block-right-gps-img"></div>
                         <p>Минск, пр-т Независимости, 139</p>
                     </div>
                     <div class="contacts__block-right-blur"></div>
                 </section>
-                <div class="contacts__block-image">
-                    <img src="/images/icons/circle.png" alt="circle">
-                </div>
             </section>
             <section class="contacts__bottom-block">
                 <div class="contacts__bottom-block1">
@@ -559,15 +538,23 @@
     </section>
     <footer class="footer">
         <section class="container">
-            <section class="footer__box">
-                <div class="footer__ip">ИП Пышный Денис Игоревич </div>
-                <div class="footer__unp">УНП790836120 </div>
-                <div class="footer__tel">+375 (29) 250-82-09</div>
-                <div class="footer__email">E-mail: pyshnyj@tut.by</div>
-                <button>заказать звонок</button>
+            <section class="footer__block">
+                <section class="footer__box">
+                    <p class="footer__ip">ИП Пышный Денис Игоревич</p>
+                    <p class="footer__unp">УНП790836120</p>
+                    <p class="footer__tel">+375 (29) 250-82-09</p>
+                    <p class="footer__email">E-mail: pyshnyj@tut.by</p>
+                </section>
+                <article class="footer__button">
+                    <form>
+                        <button type="submit">заказать звонок</button>
+                    </form>
+                </article>
             </section>
         </section>
-    </ащщ>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
