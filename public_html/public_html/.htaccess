@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteCond %{HTTPS} on
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI}
+RewriteCond %{HTTP_HOST} ^domsosvetom\.by$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.domsosvetom\.by$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^/?$ "http\:\/\/domsosvetom\.by\/index\.php" [R=301,L]
+
